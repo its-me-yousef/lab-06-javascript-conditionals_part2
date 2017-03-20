@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<body>
+
+<script>
+
+
+	var num = prompt("Enter a number");
+
+	var hunThouRemainder = num % 100000;
+	var hunThouPlace = (num - hunThouRemainder) / 100000;
+
+	var tenThouRemainder = hunThouRemainder % 10000;
+	var tenThouPlace = (hunThouRemainder - tenThouRemainder) / 10000;
+
+	var thouRemainder = tenThouRemainder % 1000;
+	var thouPlace = (tenThouRemainder - thouRemainder) / 1000;
+
+	var hunRemainder = thouRemainder % 100;
+	var hunPlace = (thouRemainder - hunRemainder) / 100;
+
+	var tenRemainder = hunRemainder % 10;
+	var tenPlace = (hunRemainder - tenRemainder) / 10;
+
+	var oneRemainder = tenRemainder % 1;
+	var onePlace = (tenRemainder - oneRemainder) / 1;
+
+	console.log(hunThouPlace + " hundred thousands");
+	console.log(tenThouPlace + " ten thousands");
+	console.log(thouPlace + " thousands");
+	console.log(hunPlace + " hundreds");
+	console.log(tenPlace + " tens");
+	console.log(onePlace + " ones");
+
+
+</script>
+
+</body>
+
+</html>
